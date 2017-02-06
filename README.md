@@ -1,7 +1,7 @@
 # Overtime App
 
 ## Key requirement: comapany needs documentation that salaried employees
- did or did not get overtime each week
+## did or did not get overtime each week
 
 - Post -> date:date rationale:text
 - User -> Devise
@@ -15,4 +15,4 @@
 - Needs to be documented if employee did not log overtime
 
 ## UI:
-Bootstrap -> formatting
+- Bootstrap -> formatting
