@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'navigate' do
   before do
-    @user = User.create(email: "test_post@test.com", password: "sdfsddsfsd", first_name: "hhihi", last_name: "hello")
+    @user = User.create(email: "test_post@test.com", password: "sdfsddsfsd", first_name: "hihi", last_name: "hello")
     login_as(@user, scope: :user)
   end
   describe 'index' do
