@@ -12,11 +12,12 @@
  *
  *= require_tree .
  *= require_self
- *= require gritter
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "posts.scss";
+@import "bourbon";
+@import "gritter";
 
 .custom-nav {
   margin-top: 15px;
