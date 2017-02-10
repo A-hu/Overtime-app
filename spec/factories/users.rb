@@ -8,6 +8,7 @@ FactoryGirl.define do
     password "123123"
     first_name "hihi"
     last_name "hello"
+    phone "5555555555"
   end
 
   factory :admin_user, class: "AdminUser" do
@@ -15,6 +16,7 @@ FactoryGirl.define do
     password "123123"
     first_name "admin"
     last_name "hello"
+    phone "5555555555"
   end
 
   factory :non_authorized_user, class: "User" do
@@ -22,5 +24,6 @@ FactoryGirl.define do
     password "123123"
     first_name "Non"
     last_name "Authorized"
+    phone "5555555555"
   end
 end
