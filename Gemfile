@@ -16,6 +16,7 @@ gem "gritter", "1.2.0"
 gem "administrate", "~> 0.3.0"
 gem 'bourbon'
 gem "pundit"
+gem 'twilio-ruby', '~> 4.11.1'
 
 group :development, :test do
   gem 'byebug', platform: :mri
