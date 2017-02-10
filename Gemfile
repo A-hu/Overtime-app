@@ -17,6 +17,7 @@ gem "administrate", "~> 0.3.0"
 gem 'bourbon'
 gem "pundit"
 gem 'twilio-ruby', '~> 4.11.1'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 group :development, :test do
   gem 'byebug', platform: :mri
