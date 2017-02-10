@@ -6,11 +6,11 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   validates_presence_of :first_name, :last_name, :phone
 
-  PHONE_REGEX = /\A[\+]{1}[0-9]*\z/
+  PHONE_REGEX = /\A[0-9]*\z/
 
   validates :phone, format: { with: PHONE_REGEX }
 
-  validates :phone, length: { is: 12 }
+  validates :phone, length: { is: 10 }
 
   def full_name
     last_name.upcase + ", " + first_name.upcase
