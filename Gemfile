@@ -19,6 +19,7 @@ gem "pundit"
 gem 'twilio-ruby', '~> 4.11.1'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'kaminari'
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'byebug', platform: :mri
