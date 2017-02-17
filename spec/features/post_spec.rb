@@ -4,7 +4,7 @@ describe 'navigate' do
   let(:user) { FactoryGirl.create(:user) }
 
   let(:post) do
-    Post.create(date: Date.today, work_performed: "Work performed", user_id: user.id, daily_hours: 3.5)
+    Post.create(date: Date.today, work_performed: "WorkPerformed", user_id: user.id, daily_hours: 3.5)
   end
 
   before do
@@ -24,14 +24,14 @@ describe 'navigate' do
     end
 
     it 'has a list of posts' do
-      post1 = FactoryGirl.create(:post)
-      post2 = FactoryGirl.create(:second_post)
+      post
+      second_post = FactoryGirl.create(:second_post)
+      second_post.update!(user_id: user.id)
 
-      post1.update(user_id: user.id)
-      post2.update(user_id: user.id)
       visit posts_path
 
-      expect(page).to have_content(/work performed|content/)
+      expect(page).to have_text(post.work_performed)
+      expect(page).to have_text(second_post.work_performed)
     end
 
     it 'has a scope so that only post creators can see their posts' do
