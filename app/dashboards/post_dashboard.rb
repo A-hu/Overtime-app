@@ -12,8 +12,8 @@ class PostDashboard < Administrate::BaseDashboard
     id: Field::Number.with_options(searchable: false),
     date: Field::DateTime.with_options(searchable: false),
     rationale: Field::Text.with_options(searchable: true),
-    overtime_request: Field::Number.with_options(searchable: true),
-    status: Field::String.with_options(searchable: true),
+    overtime_request: Field::Number.with_options(searchable: false),
+    status: Field::String.with_options(searchable: false),
     created_at: Field::DateTime.with_options(searchable: false),
     updated_at: Field::DateTime.with_options(searchable: false),
   }.freeze
