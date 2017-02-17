@@ -9,6 +9,8 @@ FactoryGirl.define do
     first_name "hihi"
     last_name "hello"
     phone "5555555555"
+    ssn 1234
+    company "SHT company"
   end
 
   factory :admin_user, class: "AdminUser" do
@@ -17,6 +19,8 @@ FactoryGirl.define do
     first_name "admin"
     last_name "hello"
     phone "5555555555"
+    ssn 1234
+    company "SHT company"
   end
 
   factory :non_authorized_user, class: "User" do
@@ -25,5 +29,7 @@ FactoryGirl.define do
     first_name "Non"
     last_name "Authorized"
     phone "5555555555"
+    ssn 1234
+    company "SHT company"
   end
 end

@@ -1,8 +1,10 @@
 employee = Employee.create(email: "hihi@hi.com",
-                    password: "123123",
-                    first_name: "hihi",
-                    last_name: "yes",
-                    phone: "3474640201")
+                           password: "123123",
+                           first_name: "hihi",
+                           last_name: "yes",
+                           phone: "3474640201",
+                           ssn: 1234,
+                           company: "SHT company")
 
 puts "1 user created"
 
@@ -10,7 +12,9 @@ AdminUser.create(email: "admin@hi.com",
                  password: "123123",
                  first_name: "admin",
                  last_name: "yes",
-                 phone: "3474640201")
+                 phone: "3474640201",
+                 ssn: 1234,
+                 company: "SHT company")
 
 puts "1 adminuser created"
 
